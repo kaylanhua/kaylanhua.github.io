@@ -17,6 +17,13 @@ h1 {
     line-height: 2;
 }
 
+p {
+    font-family: "Source Sans Pro", sans-serif;
+	color: black;
+    font-size: 1.1rem;
+    font-style: bold;
+}
+
 .big-name {
     display: flex;
     height: 12rem;
