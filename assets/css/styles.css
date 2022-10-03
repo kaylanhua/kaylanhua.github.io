@@ -1,0 +1,23 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+body {
+    background-color: rgb(254 252 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+	color: black;
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 2;
+}
+
+.big-name {
+    display: flex;
+    height: 12rem;
+}

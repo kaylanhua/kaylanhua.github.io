@@ -6,12 +6,50 @@
 
   <title>kayla huang</title>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
 <body>
 
-  <script src="js/scripts.js"></script>
+  <div class="big-name">
+    <h1>kayla huang</h1>
+  </div>
+
+  <p> it is currently <span id="time"></p>
+
+  <a href="https://www.hitwebcounter.com" target="_blank" class="counter">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8046177&style=0007&nbdigits=4&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" />
+  </a>             
+
+  <script>
+    function setTime(){
+
+      var text2 = document.getElementById("time");
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var dn = "pm";
+      if (hours<12)
+       dn="am";
+      if (hours>12)
+       hours=hours-12;
+      if (hours==0)
+       hours=12;
+      if (minutes<=9)
+       minutes="0"+minutes;
+      if (seconds<=9)
+       seconds="0"+seconds;
+      
+        text2.innerHTML = hours + ':' + 
+        minutes + ':' + seconds+ "<bn> "+dn;
+      }
+      
+      setTime();
+      
+      setInterval(setTime, 1000);
+  </script>
+  <!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>
