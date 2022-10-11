@@ -5,9 +5,9 @@ body {
     background-color: #F9F5F1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 6.5%;
 }
 
 .border-div {
@@ -22,24 +22,28 @@ body {
 h1 {
     font-family: "Source Sans Pro", sans-serif;
 	color: #563D25;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 5rem;
-    line-height: 2;
+    line-height: 1;
 }
 
 p {
     font-family: "Source Sans Pro", sans-serif;
 	color: #563D25;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-style: bold;
     margin: 5px;
     /* padding-left: 50px;
     padding-right: 50px; */
 }
 
+.p-padding {
+    padding-bottom: 15px;
+}
+
 .big-name {
     display: flex;
-    height: 12rem;
+    height: 8.5rem;
 }
 
 .counter {
