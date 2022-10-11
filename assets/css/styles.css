@@ -61,8 +61,9 @@ p.counter-text {
 }
 
 a.counter {
+    all: initial;
     padding-top: 10px;
-    margin-left: 1px;
+    margin-left: 0px;
     padding-bottom: 60px;
 }
 
