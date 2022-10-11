@@ -52,14 +52,14 @@ p {
     height: 8.5rem;
 }
 
-.counter-text {
+p.counter-text {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: #563D25;
 }
 
-.counter {
+a.counter {
     padding-top: 10px;
     margin-left: 5px;
     padding-bottom: 60px;
@@ -71,12 +71,9 @@ a {
 
 a:link { text-decoration: none; }
 
-
 a:visited { text-decoration: none; }
 
-
 a:hover { text-decoration: none; }
-
 
 a:active { text-decoration: none; }
 
