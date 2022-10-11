@@ -52,11 +52,14 @@ p {
     height: 8.5rem;
 }
 
-.counter {
+.counter-text {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: #563D25;
+}
+
+.counter {
     padding-top: 10px;
     margin-left: 5px;
     padding-bottom: 60px;
