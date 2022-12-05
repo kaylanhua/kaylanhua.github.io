@@ -100,6 +100,7 @@ a:active { text-decoration: none; }
 .slp {
     background-color: #F9F5F1;
     margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
