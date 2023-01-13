@@ -26,19 +26,17 @@ h1 {
 	color: #563D25;
     font-weight: 200;
     font-size: 5.5rem;
-    line-height: 0.2;
+    line-height: 60px;
+    margin-bottom: 15px;
 }
 
 p {
     font-family: 'Didact Gothic', sans-serif;
-    /* font-family: "Source Sans Pro", sans-serif; */
 	color: #563D25;
     font-weight: 100;
     font-size: 1.2rem;
     font-style: bold;
     margin: 5px;
-    /* padding-left: 20%;
-    padding-right: 20%; */
 }
 
 .p-padding {
@@ -51,7 +49,6 @@ p {
 
 .big-name {
     display: flex;
-    height: 7.2rem;
 }
 
 p.counter-text {
@@ -85,42 +82,9 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
-
 .slp {
     background-color: #F9F5F1;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: left;
-    margin-top: auto; */
-}
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
 }
