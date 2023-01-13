@@ -7,9 +7,9 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    margin-top: 5%;
-    padding-left: 22.5%;
-    padding-right: 22.5%;
+    margin-top: 2%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .border-div {
