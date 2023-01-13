@@ -7,7 +7,9 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    margin-top: 6.5%;
+    margin-top: 5%;
+    padding-left: 22.5%;
+    padding-right: 22.5%;
 }
 
 .border-div {
@@ -35,8 +37,8 @@ p {
     font-size: 1.2rem;
     font-style: bold;
     margin: 5px;
-    /* padding-left: 50px;
-    padding-right: 50px; */
+    /* padding-left: 20%;
+    padding-right: 20%; */
 }
 
 .p-padding {
