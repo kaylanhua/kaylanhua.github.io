@@ -8,11 +8,25 @@
   <title>kayla huang</title>
 
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
-
+  <div id="sidebar">
+    <ul>
+      <li class="menu">
+        <a href="javascript:void(0)" class="menu-btn"><i class="far fa-folder"></i> menu</a>
+        <!-- <a href="javascript:void(0)" class="menu-btn">menu</a> -->
+        <div class="menu-content">
+          <a href="./index.html" class="branch">home</a>
+          <a href="./reading.html" class="branch">reading</a>
+          <a href="https://www.linkedin.com/in/klhuang3/" class="branch-end">about</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- <div id="menu-container"></div> -->
   <div class="border-div">
     <div class="big-name">
       <h1><b>kayla huang</b></h1>
@@ -50,31 +64,7 @@
     </div>
   </div>         
 
-  <script>
-    function setTime(){
-
-      var text2 = document.getElementById("time");
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
-      var dn = "pm";
-      if (hours<12)
-       dn="am";
-      if (minutes<=9)
-       minutes="0"+minutes;
-      if (seconds<=9)
-       seconds="0"+seconds;
-      
-        text2.innerHTML = hours + ':' + 
-        minutes + ':' + seconds+ "<bn> ";
-      }
-      
-      setTime();
-      
-      setInterval(setTime, 1000);
-  </script>
-  <!-- <script src="js/scripts.js"></script> -->
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
 

@@ -88,3 +88,123 @@ a:active { text-decoration: none; }
     display: flex;
     flex-direction: column;
 }
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: transparent; /* Match the body's background color */
+    left: 9%; /* Adjust this value to move the sidebar */
+    top: 23.5%;
+    overflow: auto;
+    font-family: 'Didact Gothic', sans-serif; /* Match the body's font */
+    color: #563D25; /* Match the body's font color */
+}
+
+#sidebar ul {
+    padding: 20px;
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+#sidebar ul li a {
+    color: #563D25; /* Match the link color */
+    text-decoration: none;
+}
+
+#sidebar ul li a:link,
+#sidebar ul li a:visited,
+#sidebar ul li a:hover,
+#sidebar ul li a:active {
+    text-decoration: none; /* Remove underline from links */
+}
+
+
+
+/* Menu Content (Hidden by Default) */
+.menu-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Links inside the menu */
+.menu-content a {
+    display: block;
+    color: #563D25;
+    text-decoration: none;
+}
+
+/* Change color of menu links on hover */
+.menu-content a:hover {
+    background-color: transparent; /* Remove the background color */
+    color: #B68354;
+}
+
+/* Show the menu content when the menu is toggled */
+.menu.toggled .menu-content {
+    max-height: 200px; /* Adjust this value as needed */
+}
+
+.menu-btn i {
+    padding-right: 7px;
+    margin-left: 3px; /* Adjust this value to move the icon to the right */
+  }
+
+.branch {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .branch::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: black;
+  }
+  
+  .branch::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    height: 1px;
+    width: 10px;
+    background: black;
+  }
+
+  .branch-end {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .branch-end::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 50%; /* Change this to 50% to make the vertical line only half as tall */
+    width: 1px;
+    background: black;
+  }
+  
+  .branch-end::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    height: 1px;
+    width: 10px;
+    background: black;
+  }
