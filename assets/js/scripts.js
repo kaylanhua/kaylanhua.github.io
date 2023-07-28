@@ -35,10 +35,15 @@ var menu = document.querySelector('.menu');
 menu.classList.toggle('toggled');
 });
 
-// window.onload = function() {
-//    fetch('menu.html')
-//      .then(response => response.text())
-//      .then(data => {
-//        document.getElementById('menu-container').innerHTML = data;
-//      });
-//  };
+// document.querySelectorAll('.menu-btn').forEach(function(btn) {
+//    btn.addEventListener('click', function() {
+//      var menuContent = this.nextElementSibling;
+//      if (menuContent.style.display === 'none' || menuContent.style.display === '') {
+//        menuContent.style.display = 'block';
+//      } else {
+//        menuContent.style.display = 'none';
+//      }
+//      var menu = this.parentElement;
+//      menu.classList.toggle('toggled');
+//    });
+//  });

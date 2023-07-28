@@ -152,6 +152,7 @@ a:active { text-decoration: none; }
 
 .menu-btn i {
     padding-right: 7px;
+    padding-bottom: 7px;
     margin-left: 3px; /* Adjust this value to move the icon to the right */
   }
 
@@ -167,7 +168,7 @@ a:active { text-decoration: none; }
     position: absolute;
     left: -10px;
     top: 0;
-    height: 100%;
+    height: 150%;
     width: 1px;
     background: black;
   }
@@ -194,7 +195,7 @@ a:active { text-decoration: none; }
     position: absolute;
     left: -10px;
     top: 0;
-    height: 50%; /* Change this to 50% to make the vertical line only half as tall */
+    height: 55%; /* Change this to 50% to make the vertical line only half as tall */
     width: 1px;
     background: black;
   }
