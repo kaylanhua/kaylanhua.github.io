@@ -39,6 +39,7 @@ menu.classList.toggle('toggled');
 //    btn.addEventListener('click', function() {
 //      var menuContent = this.nextElementSibling;
 //      if (menuContent.style.display === 'none' || menuContent.style.display === '') {
+   
 //        menuContent.style.display = 'block';
 //      } else {
 //        menuContent.style.display = 'none';
