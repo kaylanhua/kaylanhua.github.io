@@ -18,8 +18,9 @@ function setTime() {
         month = "0" + month;
     if (day <= 9)
         day = "0" + day;
-
-    text2.innerHTML = `it is ${month} ${day} ${year}, ${hours}:${minutes}:${seconds}`;
+    
+    var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' };
+    text2.innerHTML = now.toLocaleDateString('en-US', options).toLowerCase().replace(/,/g, '');
 }
 
 setTime();
