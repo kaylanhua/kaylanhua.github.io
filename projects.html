@@ -43,7 +43,10 @@
       
       <div class="border-div">
         <div class="p-body">
-          <h3><b>projects</b></h3>
+          <h3><b>past projects</b></h3>
+          <p class="subtitle">
+            a random assortment of things i've made
+          </p>
           
           <!-- <div class="project-post">
             <h4 class="project-title">Project Title</h4>
@@ -57,10 +60,32 @@
               <a href="#" class="project-link">Live Demo</a>
             </div>
           </div> -->
+        
+          <div class="project-post">
+            <p class="project-title"><b>LLM-powered conflict inspection</b></p>
+            <p class="project-date">Date: <span class="date">Aug 2024</span></p>
+            <p class="project-description">
+                Another thesis tool, this time for parsing conflict data and timelines. Given a conflict, the app will return a list of recent conflicts, a timeline of events for the selected conflict, and a list of parties involved. Users can also use the app to search for mentions of keywords in the GDELT database.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/kaylanhua/conflicts/blob/main/hadr/app/rag_app.py" class="project-link">Code</a>
+              <a href="https://conflict-inspection.streamlit.app/" class="project-link">Demo</a>
+            </div>
+            <img src="./images/projects/inspector.jpeg" alt="Conflict Inspection" class="project-image" width="100%">
+          </div>
+
+          <div class="project-post">
+            <p class="project-title"><b>NAICS code classification</b></p>
+            <p class="project-date">Date: <span class="date">Aug 2024</span></p>
+            <p class="project-description">
+                Given a URL and a name for a company, the app will return the NAICS code for the company.
+            </p>
+            <img src="./images/projects/naics.jpeg" alt="Classifier" class="project-image" width="100%">
+          </div>
 
           <div class="project-post">
             <p class="project-title"><b>The promise of machine learning in violent conflict forecasting</b></p>
-            <p class="project-date">Date: <span class="date">Aug 2024</span></p>
+            <p class="project-date">Date: <span class="date">Mar 2024</span></p>
             <p class="project-description">
             At the intersection of geopolitics and AI, Ezra, Max, and I examine both the potential and the limitations of machine learning for conflict forecasting. In this paper, published in the <i>Journal of Data and Policy</i>, we explore modeling techniques for complex, civil conflict data and advocate for its use in data-driven policy making.
             </p>
@@ -82,7 +107,17 @@
             </div>
           </div>
 
-          <!-- Repeat the above structure for each project -->
+          <div class="project-post">
+            <p class="project-title"><b>Detecting cow feeding lots with computer vision</b></p>
+            <p class="project-date">Date: <span class="date">Mar 2023</span></p>
+            <p class="project-description">
+            In conjunction with WattTime, we used computer vision to detect cow feeding lots from aerial imagery. Primarily, this is to verify and guard against inaccuracies in self-reporting CAFOs, which can drastically change carbon emissions for a given area.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/aaron-watt/cs96-watttime/tree/main" class="project-link">Code</a>
+            </div>
+            <img src="./images/projects/watttime.png" alt="Classifier" class="project-image" width="100%">
+          </div>
 
         </div>
       </div>
