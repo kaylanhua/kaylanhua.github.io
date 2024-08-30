@@ -145,9 +145,6 @@ a:active { text-decoration: none; }
 /* Menu Content (Hidden by Default) */
 .menu-content {
     display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
 }
 
 /* Links inside the menu */
