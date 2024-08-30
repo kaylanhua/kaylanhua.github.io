@@ -112,7 +112,7 @@ a:active { text-decoration: none; }
     width: 200px;
     margin-right: 20px;
     background-color: transparent; /* Match the body's background color */
-    left: 14%; /* Adjust this value to move the sidebar */
+    left: 10%; /* Adjust this value to move the sidebar */
     top: 23.5%;
     overflow: auto;
     font-family: 'Didact Gothic', sans-serif; /* Match the body's font */
@@ -233,7 +233,7 @@ a:active { text-decoration: none; }
     max-width: 1000px; /* Reduced from 1200px */
     margin: 0 auto;
     padding: 20px 0; /* Remove horizontal padding */
-    margin-left: 10%; /* Align to the left */
+    margin-left: 7%; /* Align to the left */
   }
   
   #sidebar {
