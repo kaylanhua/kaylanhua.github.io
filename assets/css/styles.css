@@ -255,3 +255,50 @@ html, body {
     margin: 0px;
     padding: 0;
 }
+
+
+/* FOR THE PROJECTS PAGE */
+
+.project-post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #563D25;
+}
+
+.project-title {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #563D25;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.project-date {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #563D25;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #563D25;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-link {
+    font-family: 'Didact Gothic', sans-serif;
+    text-decoration: none;
+    color: #B68354;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
