@@ -22,21 +22,42 @@ function setTime() {
     var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' };
     text2.innerHTML = now.toLocaleDateString('en-US', options).toLowerCase().replace(/,/g, '');
 }
-
 setTime();
 setInterval(setTime, 1000);
 
-document.querySelector('.menu-btn').addEventListener('click', function() {
-    var menuContent = document.querySelector('.menu-content');
-    if (menuContent.style.display === 'none' || menuContent.style.display === '') {
-        menuContent.style.display = 'block';
-    } else {
-        menuContent.style.display = 'none';
-    }
-});
+// // Wrap all DOM-dependent code in a DOMContentLoaded event listener
+// document.addEventListener('DOMContentLoaded', function() {
+//     setTime();
+//     setInterval(setTime, 1000);
 
-document.querySelector('.menu-btn').addEventListener('click', function() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('toggled');
-});
+//     const menuButtons = document.querySelectorAll('.menu-btn');
+    
+//     menuButtons.forEach(button => {
+//         button.addEventListener('click', function(e) {
+//             e.preventDefault();
+//             const menuContent = this.nextElementSibling;
+//             if (menuContent && menuContent.classList.contains('menu-content')) {
+//                 menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+//             }
+//         });
+//     });
+// });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle menu buttons
+    const menuBtns = document.querySelectorAll('.menu-btn');
+    
+    menuBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const menuContent = this.nextElementSibling;
+            if (menuContent) {
+                menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+            }
+            
+            const menu = this.closest('.menu');
+            if (menu) {
+                menu.classList.toggle('toggled');
+            }
+        });
+    });
+});

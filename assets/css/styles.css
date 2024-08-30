@@ -211,3 +211,26 @@ a:active { text-decoration: none; }
     width: 10px;
     background: black;
   }
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  #sidebar {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .border-div {
+    border: 1px solid #000;
+    padding: 40px;
+  }
+  
+  /* You may need to adjust or remove any existing positioning for #sidebar */
