@@ -8,8 +8,8 @@ body {
     justify-content: left;
     align-items: center;
     margin-top: 1.5%;
-    padding-left: 5%; /* Reduced from 20% */
-    padding-right: 5%; /* Reduced from 20% */
+    padding-left: 5%; /* Increased from 2% */
+    padding-right: 5%; /* Increased from 2% */
 }
 
 .border-div {
@@ -109,8 +109,9 @@ a:active { text-decoration: none; }
     align-self: flex-start;
     max-height: calc(100vh - 40px);
     overflow-y: auto;
-    width: 200px;
-    margin-right: 20px;
+    width: 15%; /* Reduced from 20% */
+    max-width: 150px; /* Reduced from 200px */
+    margin-right: 3%; /* Increased from 2% */
     background-color: transparent; /* Match the body's background color */
     left: 10%; /* Adjust this value to move the sidebar */
     top: 23.5%;
@@ -139,8 +140,6 @@ a:active { text-decoration: none; }
 #sidebar ul li a:active {
     text-decoration: none; /* Remove underline from links */
 }
-
-
 
 /* Menu Content (Hidden by Default) */
 .menu-content {
@@ -227,20 +226,22 @@ a:active { text-decoration: none; }
 
   .container {
     display: flex;
-    max-width: 1000px; /* Reduced from 1200px */
-    margin: 0 auto;
-    padding: 20px 0; /* Remove horizontal padding */
-    margin-left: 7%; /* Align to the left */
+    max-width: 90%; /* Added to limit overall width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 10%; /* Added horizontal padding */
+    margin-left: 0%; /* Reduced from 7% */
   }
   
   #sidebar {
-    width: 200px;
-    margin-right: 20px;
+    width: 15%; /* Reduced from 20% */
+    max-width: 150px; /* Reduced from 200px */
+    margin-right: 3%; /* Increased from 2% */
   }
   
   .content {
     flex: 1;
-    max-width: 1000px; /* Add this to make the content area narrower */
+    max-width: 75%; /* Adjusted from 78% */
+    padding-right: 5%; /* Added right padding */
   }
   
   .border-div {
@@ -255,7 +256,6 @@ html, body {
     margin: 0px;
     padding: 0;
 }
-
 
 /* FOR THE PROJECTS PAGE */
 
@@ -314,4 +314,44 @@ html, body {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px 2%;
+    }
+
+    #sidebar {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
